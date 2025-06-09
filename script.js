@@ -254,13 +254,13 @@ function shuffle(array) {
 let usedHues = [];
 
 function getRandomColor() {
-  if (usedHues.length >= 360 / 30) {
-    usedHues = []; // Reset after enough unique colors
+  if (usedHues.length >= 360 / 10) {
+    usedHues = [];
   }
 
   let hue;
   do {
-    hue = Math.floor(Math.random() * 12) * 30; // steps of 30° on hue wheel -> MAX 12 pairs
+    hue = Math.floor(Math.random() * 36) * 10; // steps of 10° on hue wheel -> MAX 36 pairs
   } while (usedHues.includes(hue));
 
   usedHues.push(hue);
