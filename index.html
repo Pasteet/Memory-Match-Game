@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latvian Memory Match Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Memory Match Game</h1>
+
+  <div id="options-panel" class="controls">
+  <label for="language">Choose language:</label>
+  <select id="language">
+    <option value="lv">Latvian</option>
+    <option value="et">Estonian</option>
+  </select>
+
+  <label for="category">Choose category:</label>
+  <select id="category">
+    <option value="animals">Animals</option>
+    <option value="furniture">Furniture</option>
+  </select>
+
+  <label for="pairCount">Number of pairs (5–15):</label>
+  <input type="number" id="pairCount" min="5" max="15" value="5">
+
+  <button id="startBtn">Start Game</button>
+  </div>
+
+  <div id="game-area">
+  <div id="win-message" class="hidden"></div>
+  <div id="game-board" class="game-board"></div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
